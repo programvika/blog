@@ -1,0 +1,29 @@
+.category {
+  max-width: 100%;
+  .wrapper {
+    ul {
+      list-style: none;
+      li {
+        background-color: #78b1a4;
+        margin-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        padding: 8px;
+        border-radius: 13px;
+        border: 1px solid #78b1a4;
+        &:hover {
+          background-color: white;
+          color: #78b1a4;
+          border: 1px solid #78b1a4;
+        }
+      }
+      .active {
+        background-color: white;
+        color: #78b1a4;
+        border: 1px solid #78b1a4;
+      }
+    }
+  }
+}

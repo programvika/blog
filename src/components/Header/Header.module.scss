@@ -1,0 +1,19 @@
+.header {
+  background-color: #78b1a4;
+  width: 100%;
+  margin: 0 auto;
+  height: 58px;
+  padding: 20px;
+
+  button {
+    font-family: 'EB Garamond', serif;
+    background-color: #78b1a4;
+    border: none;
+    color: rgb(250, 252, 210);
+    cursor: pointer;
+    font-size: 22px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

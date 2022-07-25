@@ -1,0 +1,74 @@
+.create {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #78b1a4;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .form {
+      display: flex;
+      height: 268px;
+
+      .inpts {
+        display: grid;
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        gap: 50px;
+        height: 100%;
+        .inputImg {
+          display: flex;
+          grid-row-start: 1;
+          grid-column-start: 1;
+
+          grid-row-end: 3;
+          grid-column-end: 3;
+          textarea {
+            min-height: 100%;
+            font-size: 30px;
+            resize: none;
+          }
+        }
+        .post {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          grid-row-start: 1;
+          grid-column-start: 3;
+
+          grid-row-end: 3;
+          grid-column-end: 6;
+
+          .postTextArea {
+            min-height: 149px;
+            font-size: 30px;
+            resize: none;
+          }
+          input {
+            height: 20px;
+            font-style: italic;
+          }
+
+          button {
+            cursor: pointer;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            background-color: #78b1a4;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
