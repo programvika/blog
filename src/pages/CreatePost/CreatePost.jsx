@@ -8,7 +8,7 @@ const CreatePost = () => {
   const [img, setImg] = useState('');
   const [title, setTitle] = useState('');
   const [post, setPost] = useState('');
-  const [select, setSelect] = useState('');
+  const [select, setSelect] = useState('Домашние животные');
 
   const categoryName = useSelector((state) => state.categoryName.categoryName);
 
@@ -55,9 +55,9 @@ const postGoods = async () => {
                 value={title}
                 placeholder="Напишите сюда тему своего поста"
               />
-              <select name='category' required value={select} onChange={chengeSelect}>
+              <select defaultValue={'default'} value={select} onChange={chengeSelect}>
                 {categoryName.map((name, index) => (
-                  <option selected key={index}>{name}</option>
+                  <option key={index}>{name}</option>
                 ))}
               </select>
               <textarea

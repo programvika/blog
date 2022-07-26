@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './PostPage.module.scss';
-import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { setPosts } from '../../redux/slice/postsSlice';
 
 const PostPage = () => {
-  const posts = useSelector((state) => state.posts.posts);
   const { id } = useParams();
 
   const [device, setDevice] = useState([]);

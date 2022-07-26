@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.scss'
 import {useNavigate} from 'react-router-dom'
+import Search from '../Search/Search'
 
 const Header = () => {
   const nav = useNavigate()
@@ -12,7 +13,8 @@ const Header = () => {
         <button onClick={() => nav('/create')}>Создать свой пост</button>
       </div>
       <div className={styles.auth}>
-        <button>Войти</button>
+        <Search />
+        <button className={styles.btnAuth}>Войти</button>
       </div>
     </div>
   );

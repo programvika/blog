@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  categoryName: ['Домашние животные', 'Готовка', 'Семья', 'Карьера', 'Отдых', 'Здоровье', 'Другое']
+  categoryName: ['Все', 'Домашние животные', 'Готовка', 'Семья', 'Карьера', 'Отдых', 'Здоровье', 'Другое']
 };
 
 const categoryNameSlice = createSlice({
