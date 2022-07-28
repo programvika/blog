@@ -1,0 +1,29 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  .wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    .bloks {
+      width: 50%;
+      position: relative;
+      .after {
+        position: absolute;
+        width: 40rem;
+        height: 20;
+        background-color: black;
+      }
+      .before {
+        background-color: wheat;
+        position: absolute;
+        z-index: 10;
+        height: 375px;
+        width: 250px;
+        bottom: -350px;
+      }
+    }
+  }
+}

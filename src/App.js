@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
 import CreatePost from './pages/CreatePost/CreatePost';
 import PostPage from './pages/PostPage/PostPage';
+import Auth from './pages/Auth/Auth';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<CreatePost />} />
             <Route path="/post/:id" element={<PostPage />} />
+            <Route path="/auth" element={<Auth />} />
           </Routes>
         </div>
       </div>

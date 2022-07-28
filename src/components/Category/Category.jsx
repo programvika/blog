@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {setCategory} from '../../redux/slice/categorySlice'
 import styles from './Category.module.scss';
+import { setCurrentPage } from '../../redux/slice/paginateSlice';
 
 const Category = () => {
   const categoryName = useSelector(state => state.categoryName.categoryName)
   const category = useSelector(state => state.category.category)
 
   const clickCategory = (name) => {
-    dispacth(setCategory(name));
+    dispatch(setCategory(name));
+    dispatch(setCurrentPage(1));
   }
 
-  const dispacth = useDispatch()
-
-  console.log(category);
+  const dispatch = useDispatch()
 
   return (
     <div className={styles.category}>

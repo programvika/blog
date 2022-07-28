@@ -22,7 +22,7 @@ const PostPage = () => {
 
   return (
     <div className={styles.postPage}>
-      <img src="" alt="" />
+
       {device.title}
     </div>
   );

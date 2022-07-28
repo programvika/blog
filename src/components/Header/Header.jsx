@@ -14,7 +14,9 @@ const Header = () => {
       </div>
       <div className={styles.auth}>
         <Search />
-        <button className={styles.btnAuth}>Войти</button>
+        <button onClick={() => nav('/auth')} className={styles.btnAuth}>
+          Войти
+        </button>
       </div>
     </div>
   );
